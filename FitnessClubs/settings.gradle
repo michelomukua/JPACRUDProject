@@ -1,0 +1,4 @@
+rootProject.name = 'FitnessClubs'
+
+includeFlat 'JPAAuroraGyms'
+

@@ -10,8 +10,8 @@ import jakarta.transaction.Transactional;
 
 @Service
 @Transactional
-public class FitnessClubsDaoImpl implements FitnessclubsDAO{
-	
+public class FitnessClubsDaoImpl implements FitnessclubsDAO {
+
 	@PersistenceContext
 	private EntityManager em;
 
@@ -23,9 +23,34 @@ public class FitnessClubsDaoImpl implements FitnessclubsDAO{
 	@Override
 	public List<AuroraGym> findAll() {
 		String jpql = "SELECT gym FROM AuroraGym gym";
-		
+
 		return em.createQuery(jpql, AuroraGym.class).getResultList();
 	}
-	
+
+	@Override
+	public AuroraGym addGym(AuroraGym gym) {
+		System.out.println("gym" + gym.toString());
+		em.persist(gym);
+
+		em.flush();
+
+		// em.getTransaction().commit();
+
+		return gym;
+
+	}
+
+	@Override
+	public void deleteById(int gymId) {
+		AuroraGym gym = em.find(AuroraGym.class, gymId);
+		em.remove(gym);
+	}
+
+	@Override
+	public AuroraGym updateGym(AuroraGym gym) {
+		em.merge(gym);
+		em.flush();
+		return gym;
+	}
 
 }

@@ -24,6 +24,7 @@ public class AuroraGym {
 	private Boolean twentyFourHour;
 	@Column(name = "image_url")
 	private String imageUrl;
+
 	public int getId() {
 		return id;
 	}

@@ -18,7 +18,7 @@ The Home page has five buttoms for the CRUD process.
 
 
 
-## Technologies Uses
+## Technologies Used
 
 Java to handle the codes
 Spring Boot to transmit interaction between Tomcat and jsp
@@ -32,4 +32,4 @@ Jakarta to access libraries for implementing request
 ## Lessons Learned
 * Unless the forward engineering process in the MySql workbench is completed succeessful, the intended page will not display on the browser.
 * Creating each transaction in its own JSP (JavaServer Page) file makes for good organized work than to lump all transactions in one JSP file.
-* Thorough reading of the codes and well-organized queries are essential to deliver the exact intended pages on the browser
+* Thorough reading of the codes and well-organized queries are essential to deliver the exact intended pages on the browser.

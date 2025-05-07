@@ -29,7 +29,7 @@ mySQLWorkbench to store and the table and the queries
 Jakarta to access libraries for implementing request
 
 
-## lessons learned
+## Lessons Learned
 * Unless the forward engineering process in the MySql workbench is completed succeessful, the intended page will not display on the browser.
 * Creating each transaction in its own JSP (JavaServer Page) file makes for good organized work than to lump all transactions in one JSP file.
 * Thorough reading of the codes and well-organized queries are essential to deliver the exact intended pages on the browser
